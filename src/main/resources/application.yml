@@ -1,5 +1,44 @@
+# Datasource config
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/microraptor?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    username: microraptor
+    password: xP3eMMHdBy5MTxiB
+# Datasource config End
+
+# Server info
+---
 spring:
   application:
     name: Microraptor
 server:
   port: 80
+  servlet:
+    context-path: /
+  tomcat:
+    max-threads: 1000
+    min-spare-threads: 30
+    uri-encoding: UTF-8
+# Server info End
+
+# Project info
+microraptor:
+  # 是否启用ansi控制台输出有颜色的字体，dev环境建议开启，服务器环境设置为false
+  enable-ansi: true
+  # 当前环境服务IP地址
+  server-ip: 127.0.0.1
+  # 文件上传下载配置
+  upload-path: /opt/upload/
+# Project info End
+
+# Custom project info
+info:
+  project-groupId: 'cn.biuaxia.code'
+  project-name: ${spring.application.name}
+  project-author: biuaxia
+  project-description: ${spring.application.name} project
+  project-website: 'https://code.biuaxia.cn'
+  project-home: http://${microraptor.server-ip}:${server.port}${server.servlet.context-path}
+  project-swagger: http://${microraptor.server-ip}:${server.port}${server.servlet.context-path}/swagger-ui.html
+  project-knife4j: http://${microraptor.server-ip}:${server.port}${server.servlet.context-path}/doc.html
+# Custom project info End

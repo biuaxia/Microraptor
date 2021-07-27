@@ -30,13 +30,15 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    // runtimeOnly 'mysql:mysql-connector-java'
+    runtimeOnly 'mysql:mysql-connector-java'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     implementation group: 'cn.hutool', name: 'hutool-all', version: '5.7.5'
-    // implementation group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.4.3.1'
+    implementation group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.4.3.1'
+    implementation group: 'org.fusesource.jansi', name: 'jansi', version: '2.3.4'
+    implementation group: 'org.ini4j', name: 'ini4j', version: '0.5.4'
 
     /* 使用代码生成器请放开 */
     // implementation group: 'com.baomidou', name: 'mybatis-plus-generator', version: '3.5.0'

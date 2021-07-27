@@ -16,6 +16,9 @@ import java.nio.charset.StandardCharsets;
 @Slf4j
 public class AuthorizationCertificateUtil {
 
+    /**
+     * 读取配置文件
+     */
     public static void readFormFile(String filepath) {
         String absolutePath = StrUtil.format("{}{}{}",
                 Constants.THE_LOCATION_OF_THE_STARTUP_CLASS,

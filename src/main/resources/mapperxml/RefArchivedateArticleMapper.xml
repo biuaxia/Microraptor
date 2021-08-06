@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.biauxia.code.microraptor.generate.mapper.RefArchivedateArticleMapper">
+    <resultMap id="BaseResultMap" type="cn.biauxia.code.microraptor.generate.domain.RefArchivedateArticle">
+        <!--@mbg.generated-->
+        <!--@Table ref_archivedate_article-->
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="archiveDate_id" jdbcType="VARCHAR" property="archivedateId"/>
+        <result column="article_id" jdbcType="VARCHAR" property="articleId"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, archiveDate_id, article_id
+    </sql>
+</mapper>

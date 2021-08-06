@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.biauxia.code.microraptor.generate.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="cn.biauxia.code.microraptor.generate.domain.User">
+        <!--@mbg.generated-->
+        <!--@Table `user`-->
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="userName" jdbcType="VARCHAR" property="username"/>
+        <result column="userURL" jdbcType="VARCHAR" property="userurl"/>
+        <result column="userRole" jdbcType="VARCHAR" property="userrole"/>
+        <result column="userAvatar" jdbcType="VARCHAR" property="useravatar"/>
+        <result column="userB3Key" jdbcType="VARCHAR" property="userb3key"/>
+        <result column="userGitHubId" jdbcType="VARCHAR" property="usergithubid"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, userName, userURL, userRole, userAvatar, userB3Key, userGitHubId
+    </sql>
+</mapper>

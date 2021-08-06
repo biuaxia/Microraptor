@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.biauxia.code.microraptor.generate.mapper.CategoryMapper">
+    <resultMap id="BaseResultMap" type="cn.biauxia.code.microraptor.generate.domain.Category">
+        <!--@mbg.generated-->
+        <!--@Table category-->
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="categoryTitle" jdbcType="VARCHAR" property="categorytitle"/>
+        <result column="categoryURI" jdbcType="VARCHAR" property="categoryuri"/>
+        <result column="categoryOrder" jdbcType="INTEGER" property="categoryorder"/>
+        <result column="categoryTagCnt" jdbcType="INTEGER" property="categorytagcnt"/>
+    </resultMap>
+    <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs"
+               type="cn.biauxia.code.microraptor.generate.domain.Category">
+        <!--@mbg.generated-->
+        <!--@Table category-->
+        <result column="categoryDescription" jdbcType="LONGVARCHAR" property="categorydescription"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, categoryTitle, categoryURI, categoryOrder, categoryTagCnt
+    </sql>
+    <sql id="Blob_Column_List">
+        <!--@mbg.generated-->
+        categoryDescription
+    </sql>
+</mapper>

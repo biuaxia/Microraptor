@@ -1,0 +1,962 @@
+/* 规范一下颜色，颜色采用茶绿色 外加 轻蓝色 作为辅助颜色 */
+/*规定rem单位字体大小*/
+html {
+  font-size: 16px !important;
+}
+/*表情包*/
+.hu60_face,
+#face img {
+  width: 32px;
+  max-width: 32px;
+}
+/*主题页面布局*/
+/*页面共用组件*/
+/*全局通用组件,这一部分组件以 widget- 开头*/
+/*页面头部*/
+/*用户面板*/
+/*移动端，弹出用户面板*/
+/*用户面板结束*/
+/*收信箱界面*/
+/*论坛主题部分*/
+/* 搜索页面 */
+/*帖子列表*/
+/*帖子页面部分*/
+/*分页组件开始*/
+/*分页组件结束*/
+/*评论框部分*/
+/* 登录框组件*/
+/*发帖组件开始*/
+/*发帖组件结束*/
+/*聊天室页面*/
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+}
+/*通用组件*/
+.case {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.content-box {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.avatar {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.pull-right {
+  float: right;
+}
+/*头部组件*/
+.layout-header {
+  width: 100%;
+  background: #53B1A8;
+  color: #FFFFFF;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.layout-header .header-logo img {
+  max-height: 80px;
+}
+.layout-header .header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.layout-header .header-inner .header-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.layout-header .header-inner .header-nav > li {
+  margin-right: 20px;
+}
+.layout-header .header-inner .header-nav > li a {
+  color: #FFF;
+}
+.layout-header .header-inner .header-nav .userAvatar {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.forum-list {
+  display: block;
+  flex-wrap: wrap;
+  padding-left: 40px;
+}
+.forum-list .forum-list-line {
+  display: flex;
+  min-height: 35px;
+}
+.forum-list .forum-list-parent {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.forum-list .forum-list-parent > a {
+  display: inline-block;
+  background: #eee;
+  color: #999;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px;
+  margin: 3px;
+  font-weight: bold;
+}
+.forum-list .forum-list-child {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.forum-list .forum-list-child > a {
+  display: inline-block;
+  margin-left: 10px;
+  background: #eee;
+  color: #999;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px;
+  margin: 3px;
+}
+.layout-footer {
+  height: 50px;
+  background: white;
+  margin-top: 15px;
+}
+.layout-footer .case {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.layout-footer .case div {
+  margin: 0 auto;
+}
+.layout-footer a {
+  color: #666;
+}
+.layout-footer .footer-link {
+  width: 400px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.layout-footer .footer-link > li {
+  margin-left: 10px;
+  font-size: 12px;
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px #ccc;
+  border-radius: 3px;
+  background-color: #FFF;
+  min-height: 95vh;
+  word-wrap: break-word;
+}
+.layout-foot-inner {
+  margin-top: 25px;
+  padding: 25px 0;
+  background-color: #E6F3FF;
+}
+.layout-foot-inner p {
+  text-align: center;
+}
+.bar {
+  margin: 10px 0;
+  color: #333;
+  background-color: #E6F3FF;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 5px 18px;
+}
+.breadcrumb {
+  padding: 8px 15px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.widget-page {
+  margin: 5px 0;
+}
+.widget-page > a {
+  display: inline-block;
+  padding: 5px 15px;
+}
+/*顶部翻页器加上一条底线*/
+.top-pager {
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 10px;
+}
+.profile {
+  padding: 5px;
+  position: absolute;
+  width: 240px;
+  min-height: 250px;
+  left: -260px;
+  top: 0px;
+}
+.profile .userHeader {
+  height: 48px;
+}
+.profile .userPanel {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 10px;
+  font-size: 0.8rem;
+}
+.profile .userPanel > li {
+  margin: 5px;
+  padding: 0;
+}
+.profile .userPanel > li > a {
+  color: #666;
+  display: block;
+  padding: 5px 25px 5px 25px;
+  border-radius: 5px;
+}
+.profile .userPanel > li > a:hover {
+  background: #666;
+  color: #FFF;
+}
+.profile .profileClose {
+  font-size: 40px;
+  display: none;
+  position: absolute;
+  bottom: 25px;
+  right: 50%;
+  margin-left: 40px;
+  border-radius: 50%;
+  color: #ffa400;
+}
+.profile .profileFilm {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 80vw;
+  top: 0;
+  bottom: 0;
+}
+.profile .userAvatar {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 10px;
+  border: 3px solid #FFF;
+  vertical-align: middle;
+}
+.profile .userName {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.msg-box {
+  padding-left: 15px;
+  border-bottom: 2px solid #BED8EA;
+}
+.msg-box .avatar {
+  width: 32px;
+  height: 32px;
+}
+.forum-name {
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  background-color: #E6F3FF;
+}
+.search-list ul {
+  list-style-type: none;
+}
+.topic-ul {
+  list-style-type: none;
+  padding: 0;
+}
+.topic-ul > li {
+  padding: 5px 10px 2px 10px;
+  border-bottom: 1px solid #EEE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topic-ul > li .topic-meta {
+  margin: 0px;
+}
+.topic-ul > li .topic-reply-count {
+  width: 5%;
+  display: flex;
+  font-weight: 300;
+  font-size: 30px;
+  color: gray;
+}
+.topic-ul > li .topic-reply-count a {
+  color: gray;
+}
+.topic-ul > li .topic-forum-name {
+  width: 15%;
+  display: flex;
+}
+.topic-ul > li .topic-forum-name a {
+  color: gray;
+}
+.topic-ul > li .topic-anchor {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-break: break-all;
+}
+.topic-ul > li .topic-anchor > a {
+  color: gray;
+}
+.topic-ul > li .topic-title {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.topic-ul > li .topic-title > a {
+  font-size: 18px;
+  display: block;
+}
+.reply-ul {
+  list-style-type: none;
+  padding: 0;
+}
+.reply-ul > li {
+  padding: 5px 10px 2px 10px;
+  border-bottom: 1px solid #EEE;
+}
+.reply-ul > li .topic-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reply-ul > li .topic-info .topic-meta {
+  margin: 0px;
+}
+.reply-ul > li .topic-info .topic-reply-count {
+  width: 5%;
+  display: flex;
+  font-weight: 300;
+  font-size: 30px;
+  color: gray;
+}
+.reply-ul > li .topic-info .topic-reply-count a {
+  color: gray;
+}
+.reply-ul > li .topic-info .topic-anchor,
+.reply-ul > li .topic-info .comments-anchor {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-break: break-all;
+}
+.reply-ul > li .topic-info .topic-anchor > a,
+.reply-ul > li .topic-info .comments-anchor > a {
+  color: gray;
+}
+.reply-ul > li .topic-info .topic-title {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+.reply-ul > li .topic-info .topic-title > a {
+  font-size: 18px;
+  display: block;
+}
+.reply-ul > li .topic-info .reply-floor {
+  margin-left: 10px;
+  width: 10%;
+  display: flex;
+  font-weight: 300;
+  font-size: 16px;
+  color: gray;
+}
+.reply-ul > li .topic-info .reply-floor a {
+  color: gray;
+}
+.reply-ul > li blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  max-height: 500px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.reply-ul > li blockquote:before {
+  color: #ccc;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.topic > h1 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.topic-content {
+  border-top: 2px solid #BED8EA;
+  padding: 8px 8px 8px 10px;
+  background-color: #FFF;
+  overflow: hidden;
+}
+.topic-content img {
+  max-width: 100%;
+}
+.topic-meta {
+  font-size: 0.8rem;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+.topic-meta .topic-meta-name {
+  margin-left: 5px;
+  line-height: 1.1rem;
+}
+.topic-meta .topic-actions {
+  margin-left: 5px;
+}
+.topic-meta .topic-actions a {
+  color: gray;
+}
+.comments-meta {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+.comments-meta .comments-meta-name {
+  margin-left: 5px;
+  line-height: 1.1rem;
+}
+.comments-meta .comments-actions {
+  margin-left: 5px;
+}
+.comments-meta .comments-actions a {
+  color: gray;
+}
+.topic-panel {
+  background-color: #EEE;
+  margin-bottom: -10px;
+}
+.topic-panel > a {
+  display: inline-block;
+  padding: 5px 8px;
+  font-size: 1rem;
+  color: #2e4e7e;
+}
+.topic-panel > a:hover {
+  color: #FFF;
+  background-color: #9d2933;
+}
+.topic-panel > div {
+  display: inline-block;
+  padding: 5px 8px;
+  font-size: 1rem;
+  color: #2e4e7e;
+}
+.topic-panel a > i {
+  font-size: 1rem;
+}
+.page-jumper {
+  overflow: hidden;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-left: 2px;
+  margin: 10px 0 0 20px;
+}
+.page-jumper > li {
+  display: inline-block;
+}
+.page-jumper > li > input {
+  height: 33px;
+  width: 60px;
+  margin-left: -1px;
+  margin-bottom: 3.5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #337ab7;
+}
+.pagination {
+  overflow: hidden;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-left: 2px;
+  margin: 10px 0 0 20px;
+}
+.pagination > li {
+  display: inline-block;
+}
+.pagination > li:first-child > a {
+  border-radius: 5px 0 0 5px;
+}
+.pagination > li:last-child > a {
+  border-radius: 0 5px 5px 0;
+}
+.pagination > li > a {
+  position: relative;
+  margin-left: -1px;
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  color: #337ab7;
+}
+.pagination > .disabled > a {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+}
+.pagination > .disabled > a:focus {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+}
+.pagination > .disabled > a:hover {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+}
+.pagination > .active > a {
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.pagination > .active > a:focus {
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.pagination > .active > a:hover {
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.comments-ul {
+  list-style-type: none;
+  padding: 0;
+}
+.comments-ul > li {
+  position: relative;
+  padding: 5px 8px 2px 0px;
+  border-bottom: 2px solid #EEE;
+}
+.topic-content,
+.floor-content,
+.chat-content {
+  transition: height 0.5s;
+  transition-timing-function: ease;
+  overflow: hidden;
+}
+.comments-content {
+  margin-left: 50px;
+}
+.floor_fold_bar {
+  width: 100%;
+  margin: 0;
+}
+.floor_fold_bar button {
+  height: 32px;
+  width: 100%;
+}
+.comments-number {
+  height: 25px;
+  width: 40px;
+  line-height: 25px;
+  margin-right: 5px;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+  font-weight: 700;
+  color: #999;
+  background-color: #EEE;
+}
+.topic-author,
+.comments-author {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #065279;
+  position: relative;
+  top: 2px;
+}
+.chat-new p {
+  text-align: left;
+}
+.login-form {
+  max-width: 450px;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 15px 25px;
+  box-shadow: 0 0 5px #AAA;
+}
+.input-group {
+  padding: 8px;
+  position: relative;
+}
+.input-group input[type="text"] {
+  width: 100%;
+  padding: 8px 20px 8px 60px;
+  border: 1px solid #d2d8d8;
+}
+.input-group input[type="password"] {
+  width: 100%;
+  padding: 8px 20px 8px 60px;
+  border: 1px solid #d2d8d8;
+}
+.input-group input[type="mail"] {
+  width: 100%;
+  padding: 8px 20px 8px 60px;
+  border: 1px solid #d2d8d8;
+}
+.login-form-submit {
+  display: inline-block;
+  width: 60%;
+  height: 2rem;
+  margin: 0 auto;
+}
+.comments-form-content {
+  width: 80%;
+  height: 100px;
+  margin: 8px 5px;
+  padding: 10px;
+  border-radius: 5px;
+  outline-style: none;
+  border: 1px solid #B2DFDB;
+  box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.075);
+}
+.comments-form-content:hover {
+  border: 1px solid #53B1A8;
+}
+.login-label {
+  display: inline-block;
+  color: #999;
+  position: absolute;
+  left: 15px;
+  top: 14px;
+}
+.widget-form {
+  margin: 0;
+  padding: 8px;
+  border-bottom: 1px solid #EEE;
+}
+.topic-form-label {
+  display: block;
+  background-color: #f5f5f5;
+  font-size: 1.2rem;
+}
+.topic-form-title {
+  display: block;
+  font-size: 16px;
+  border: 2px solid #EEE;
+  border-radius: 0;
+  width: 80%;
+  margin: 5px;
+  padding: 5px;
+}
+.topic-form-content {
+  display: block;
+  border: 2px solid #EEE;
+  min-height: 160px;
+  border-radius: 0;
+  width: 80%;
+  margin: 5px;
+  padding: 5px;
+}
+.chat-form-content {
+  width: 80%;
+  height: 100px;
+}
+.chat-list {
+  padding: 0;
+  list-style-type: none;
+}
+.chat-list > li {
+  margin: 0;
+  padding: 10px 15px 0px 0px;
+  border-bottom: 1px solid #EEE;
+  position: relative;
+}
+.chat-content {
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 10px;
+}
+.chat-number {
+  height: 25px;
+  line-height: 25px;
+  padding: 0 12px;
+  text-align: center;
+  font-weight: 700;
+  background-color: #EEE;
+  color: #999;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+}
+.floor-link {
+  color: #999;
+}
+.chat-meta-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+}
+.chat-meta {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #999;
+  display: flex;
+  align-items: center;
+}
+.chat-meta .chat-actions {
+  padding-left: 5px;
+}
+.chat-meta .chat-actions a {
+  color: gray;
+}
+.chat-avatar {
+  display: flex;
+  padding: 0 5px;
+}
+/*头像上传页面*/
+.Cropper-avatar #avatar {
+  border-radius: 50%;
+}
+/*小说阅读*/
+.book-content {
+  padding: 10px;
+}
+/*搜索框选项*/
+#searchType-label {
+  display: inline-block;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    position: static;
+    left: auto;
+  }
+  .profile {
+    position: static;
+    min-height: 0;
+    height: 50px;
+    border: none;
+    display: inline-block;
+    float: right;
+    width: auto;
+    left: auto;
+    right: auto;
+    top: auto;
+    padding: 0 15px 0 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .profile > a {
+    line-height: 50px;
+  }
+  .userPanel {
+    display: none;
+  }
+  .userName {
+    font-size: 1.1rem;
+  }
+  .userHead {
+    width: 30px;
+    height: 30px;
+  }
+  .profileMobile {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 80vw;
+    right: 0;
+    background-color: #FFF;
+  }
+  .profileMobile .profileFilm {
+    display: block;
+  }
+  .profileMobile .profileClose {
+    display: block;
+  }
+  .profileMobile .userPanel {
+    display: block;
+  }
+  .profileMobile .userPanel > li {
+    display: block;
+    border-bottom: 1px solid #EEE;
+  }
+  .profileMobile .userPanel a {
+    background-color: transparent;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*帖子列表和顶部列表 <ul> 的左侧默认padding*/
+  .forum-list,
+  .header-nav {
+    padding-left: 10px;
+  }
+  /*顶部列表 <li>*/
+  .layout-header .header-inner .header-nav > li {
+    margin-right: 10px;
+  }
+  /*回帖内容缩进*/
+  .comments-content {
+    margin-left: 15px;
+  }
+  /*顶部头像*/
+  .layout-header .header-inner .header-nav .userAvatar {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    min-height: 32px;
+  }
+  /*首页帖子列表右侧回复数和版块*/
+  .topic-ul > li .topic-reply-count {
+    display: block;
+  }
+  .topic-ul > li .topic-reply-count .number {
+    display: block;
+    font-size: 14px;
+  }
+  .topic-ul > li .topic-reply-count .spliter {
+    display: none;
+  }
+  .topic-ul > li .topic-reply-count .forum {
+    display: block;
+    font-size: 14px;
+  }
+  /*首页帖子列表*/
+  .topic-ul > li .topic-anchor > a {
+    font-size: 14px;
+  }
+  .topic-ul > li .topic-title > a {
+    font-size: 16px;
+  }
+  .topic-ul > li .topic-reply-count {
+    display: none;
+  }
+  .topic-ul > li .topic-forum-name {
+    display: none;
+  }
+  .topic-ul > li .topic-title {
+    width: 80%;
+  }
+  /*回复列表*/
+  .reply-ul > li .topic-anchor > a {
+    font-size: 14px;
+  }
+  .reply-ul > li .topic-title > a {
+    font-size: 16px;
+  }
+  .reply-ul > li .topic-info .reply-floor {
+    font-size: 18px;
+  }
+  /*头像上传页面*/
+  .layout-body .cropper-box {
+    display: block;
+  }
+  .layout-body .cropper-box .Cropper-case {
+    max-width: 100%;
+    max-height: 360px;
+  }
+  /*发言框*/
+  textarea {
+    min-width: 96%;
+  }
+  .topic-form-title {
+    width: 96%;
+    font-size: 14px;
+  }
+  /*帖子标题*/
+  .topic h1 {
+    font-size: 18px;
+  }
+  /*聊天室发言*/
+  .chat-content {
+    margin-left: 15px;
+  }
+}
+/*避免手机截图在电脑上显示过大*/
+@media screen and (min-width: 800px) {
+  img {
+    max-width: 800px;
+    max-height: 600px;
+  }
+}
+/* 关注与屏蔽列表样式 */
+.relationship-wrapper .empty {
+  width: 100%;
+  text-align: center;
+  color: #999fa5;
+  font-size: 14px;
+}
+.relationship-wrapper .user-item {
+  height: 60px;
+  color: #333333;
+  display: block;
+  border-bottom: 1px solid #f5f5f5;
+}
+.relationship-wrapper .user-item a {
+  text-decoration: none;
+}
+.relationship-wrapper .user-item a:nth-child(1) {
+  display: inline-block;
+  width: calc(100% - 60px);
+}
+.relationship-wrapper .user-item .avatar {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-top: 5px;
+  display: inline-block;
+  border-radius: 50px;
+}
+.relationship-wrapper .user-item .info {
+  margin-left: 15px;
+  margin-top: 10px;
+  display: inline-block;
+  width: calc(100% - 100px);
+}
+.relationship-wrapper .user-item .info .name {
+  font-size: 18px;
+}
+.relationship-wrapper .user-item .info .signature {
+  color: #999fa5;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.relationship-wrapper .user-item .remove {
+  float: right;
+  height: 100%;
+  width: 60px;
+  display: inline-block;
+  padding-top: 20px;
+  color: #ff0000;
+  text-align: center;
+}
+/*# sourceMappingURL=new.css.map */
